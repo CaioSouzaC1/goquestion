@@ -1,0 +1,23 @@
+@url=http://localhost:3333/api
+
+###
+
+POST {{url}}/rooms
+content-type: application/json
+accept-language: en-US,en;q=0.5
+# @env-json-key ROOM_ID json.id
+
+{
+    "theme": "test"
+}
+
+###
+
+POST {{url}}/rooms/76940c62-b83f-41e9-9bb3-2a18cdaec763/messages
+content-type: application/json
+accept-language: en-US,en;q=0.5
+
+{
+    "theme": "test"
+}
+
